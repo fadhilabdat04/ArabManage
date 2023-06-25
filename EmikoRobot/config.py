@@ -12,25 +12,25 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 123456  # integer value, dont use ""
-    API_HASH = "awoo"
-    TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 1606221784  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    API_ID = 12857763  # integer value, dont use ""
+    API_HASH = "7b71e8bca0d5e1c6d8383ae818d9ec8d"
+    TOKEN = "6031007486:AAFMxypvl32GLsci2OWJwleD1jfvlAPg9Ig"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 1345594412  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OPENWEATHERMAP_ID = 22322
-    OWNER_USERNAME = "Scotchers"
-    BOT_USERNAME = "EmiexRobot"
-    SUPPORT_CHAT = "FumikaSupportGroup"  # Your own group for support, do not add the @
+    OWNER_USERNAME = "Arabnihnge"
+    BOT_USERNAME = "BabuArabRobot"
+    SUPPORT_CHAT = "SiArab_Store"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001748076180
+        -1001749511943
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001748076180
+        -1001749511943
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
-    ERROR_LOG = -1001657496255
+    ERROR_LOG = -1001749511943
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
-    MONGO_DB_URI = "mongo+srv"  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = "postgres://nlxeuefy:6VoaR_080BDjWn9aKPB-W0Rum3Yd1dOz@arjuna.db.elephantsql.com/nlxeuefy"  # needed for any database modules
+    MONGO_DB_URI = "mongodb+srv://Menfes03:fadhil12345@cluster0.psjzpkc.mongodb.net/?retryWrites=true&w=majority"  # needed for any database modules
     ARQ_API_URL = "https://arq.hamker.in"
     ARQ_API_KEY = "BCYKVF-KYQWFM-JCMORU-RZWOFQ-ARQ"
     BOT_API_URL = "https://api.telegram.org/bot"
@@ -44,15 +44,15 @@ class Config(object):
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
-    DRAGONS = get_user_list("elevated_users.json", "sudos")
+    DRAGONS = get_user_list("elevated_users.json", "1345594412")
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
-    DEV_USERS = get_user_list("elevated_users.json", "devs")
+    DEV_USERS = get_user_list("elevated_users.json", "1345594412")
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    DEMONS = get_user_list("elevated_users.json", "supports")
+    DEMONS = get_user_list("elevated_users.json", "1345594412")
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
-    TIGERS = get_user_list("elevated_users.json", "tigers")
-    WOLVES = get_user_list("elevated_users.json", "whitelists")
-    DONATION_LINK = None  # EG, paypal
+    TIGERS = get_user_list("elevated_users.json", "1345594412")
+    WOLVES = get_user_list("elevated_users.json", "1345594412")
+    DONATION_LINK = https://www.paypal.me/fadhil406  # EG, paypal
     CERT_PATH = None
     PORT = 5000
     DEL_CMDS = True  # Delete commands that users dont have access to, like delete /ban if a non admin uses it.
@@ -60,7 +60,7 @@ class Config(object):
     WORKERS = (
         8  # Number of subthreads to use. Set as number of threads your processor uses
     )
-    BAN_STICKER = ""  # banhammer marie sticker id, the bot will send this sticker before banning or kicking a user in chat.
+    BAN_STICKER = "❌"  # banhammer marie sticker id, the bot will send this sticker before banning or kicking a user in chat.
     ALLOW_EXCL = True  # Allow ! commands as well as / (Leave this to true so that blacklist can work)
     CASH_API_KEY = (
         "awoo"  # Get your API key from https://www.alphavantage.co/support/#api-key
